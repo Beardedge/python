@@ -1,4 +1,4 @@
-from menu import Menu, MenuItem
+from menu import Menu
 from coffee_maker import CoffeeMaker
 from money_machine import MoneyMachine
 
@@ -11,7 +11,7 @@ is_on = True
 
 while is_on:
     try:
-        choice = input(f"What would you like? ")
+        choice = input("What would you like? ")
         if choice == "menu":
             menu.show_menu()
         elif choice == "shutdown-auth-5667":
